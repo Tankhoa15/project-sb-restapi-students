@@ -14,10 +14,19 @@ public class Student {
     private String name;
 
     @Column(name = "student_percentage")
-    private float percentage;
+    private float percentage; //gpa
 
     @Column(name = "student_branch")
     private String branch;
+
+    public Student() {
+    }
+
+    public Student(String name, float percentage, String branch) {
+        this.name = name;
+        this.percentage = percentage;
+        this.branch = branch;
+    }
 
     public int getRollNo() {
         return rollNo;
